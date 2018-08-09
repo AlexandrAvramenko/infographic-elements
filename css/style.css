@@ -1,0 +1,209 @@
+body {
+    font-size: 16px;
+    font-family: "PT Sans", Arial, Tahoma, Verdana, sans-serif;
+    color: #545353;
+    background: #e0dcdc;
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/ptsans_regular/PTS55F-webfont.eot');
+    src: url('../fonts/ptsans_regular/PTS55F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ptsans_regular/PTS55F-webfont.woff') format('woff'), url('../fonts/ptsans_regular/PTS55F-webfont.ttf') format('truetype'), url('../fonts/ptsans_regular/PTS55F-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('../fonts/ptsans_bold/PTS75F-webfont.eot');
+    src: url('../fonts/ptsans_bold/PTS75F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ptsans_bold/PTS75F-webfont.woff') format('woff'), url('../fonts/ptsans_bold/PTS75F-webfont.ttf') format('truetype'), url('../fonts/ptsans_bold/PTS75F-webfont.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "PT Sans Bold", Arial, Tahoma, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+h1 {font-size: 3.5rem;}
+h2 {font-size: 2.875rem;}
+h3 {font-size: 2.5rem;}
+h4 {font-size: 2.125rem;}
+h5 {font-size: 1.875rem;}
+h6 {font-size: 1.75rem;}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 40px;
+}
+.bar {
+    color: #06baba;
+}
+.price {
+    color: #e88c2c;
+}
+.search {
+    color: #fd5a5a;
+}
+.user {
+    color: #36648c;
+}
+.logo h1 {
+    margin: 0;
+}
+/*main*/
+.main {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.main-item {
+    width: 40%;
+    min-width: 420px;
+}
+.main-item h5 {
+    margin: 0;
+}
+.main-item p {
+    margin: 5px 0;
+}
+.main-item .description {
+    position: relative;
+    text-align: justify;
+    padding: 40px 20px;
+    background: #fff;
+    margin-bottom: 40px;
+    height: 116px;
+    -webkit-box-shadow: 0px 10px 30px -1px rgba(58, 58, 58, 0.41);
+    -moz-box-shadow: 0px 10px 30px -1px rgba(58, 58, 58, 0.41);
+    box-shadow: 0px 10px 30px -1px rgba(58, 58, 58, 0.41);
+}
+.main-item:first-child {
+    margin-top: 115px;
+}
+.main-item:last-child {
+    margin-top: -115px;
+}
+.left h5 {
+    text-align: right;
+}
+.right h5 {
+    text-align: left;
+}
+/*triangle*/
+.triangle-price {
+    position: absolute;
+    right: -140px;
+    top: 0;
+}
+.triangle-price .triangle-up {
+    border: 98px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 140px solid rgb(232, 140, 44);
+}
+.triangle-price .triangle-down {
+    border: 98px solid transparent;
+    border-top: 0px solid transparent;
+    border-left: 140px solid rgb(202, 102, 0);
+    border-right: 0px solid transparent;
+}
+.triangle-price .fa {
+    position: absolute;
+    top: 80px;
+    left: 32px;
+    color: #e88c2c;
+    padding: 10px 12px;
+    background: #fff;
+    border-radius: 50%;
+}
+.triangle-bar {
+    position: absolute;
+    right: -140px;
+    top: 0;
+}
+.triangle-bar .triangle-up {
+    border: 98px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 140px solid rgb(86, 200, 212);
+}
+.triangle-bar .triangle-down {
+    border: 98px solid transparent;
+    border-top: 0px solid transparent;
+    border-left: 140px solid rgb(40, 167, 173);
+    border-right: 0px solid transparent;
+}
+.triangle-bar .fa {
+    position: absolute;
+    top: 83px;
+    left: 35px;
+    color: #fff;
+}
+.triangle-search {
+    position: absolute;
+    left: -140px;
+    top: 0;
+}
+.triangle-search .triangle-up {
+    border: 98px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 140px solid rgb(253, 90, 90);
+    border-left: 0px solid transparent;
+}
+.triangle-search .triangle-down {
+    border: 98px solid transparent;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 140px solid rgb(195, 69, 75);
+}
+.triangle-search .fa {
+    position: absolute;
+    top: 83px;
+    right: 35px;
+    color: #fff;
+}
+.triangle-user {
+    position: absolute;
+    left: -140px;
+    top: 0;
+}
+.triangle-user .triangle-up {
+    border: 98px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 140px solid rgb(54, 100, 140);
+    border-left: 0px solid transparent;
+}
+.triangle-user .triangle-down {
+    border: 98px solid transparent;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 140px solid rgb(51, 72, 105);
+}
+.triangle-user .fa {
+    position: absolute;
+    top: 83px;
+    right: 35px;
+    color: #fff;
+}
+/*footer*/
+.footer .description {
+    background: #fff;
+    padding: 40px;
+    -webkit-box-shadow: 0px 0px 30px -1px rgba(58, 58, 58, 0.86);
+    -moz-box-shadow: 0px 0px 30px -1px rgba(58, 58, 58, 0.86);
+    box-shadow: 0px 0px 30px -1px rgba(58, 58, 58, 0.86);
+}
+.footer .description h5 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer .description p {
+    max-width: 1200px;
+    margin: 5px auto;
+}
+.footer .wrapper {
+    min-height: 80px;
+}
